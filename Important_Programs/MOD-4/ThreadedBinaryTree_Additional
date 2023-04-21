@@ -1,0 +1,45 @@
+
+A threaded binary tree is a binary tree that has additional links, known as "threads",
+which are used to optimize tree traversal. These threads allow for efficient 
+traversal without the need for explicit recursion or a stack data structure. 
+In a threaded binary tree, some of the null pointers that would normally exist in a 
+regular binary tree are replaced with threads that point to the next or previous 
+node in a particular traversal order, typically in-order traversal.
+
+There are two main types of threaded binary trees:
+
+In-order threaded binary tree: In this type of threaded binary tree, each node has 
+a thread that points to its in-order predecessor and/or successor. This allows for
+efficient in-order traversal without the need for recursive calls or a stack. 
+The in-order predecessor of a node is the node that comes immediately before it in 
+the in-order traversal, and the in-order successor is the node that comes 
+immediately after it in the in-order traversal.
+
+Pre-order threaded binary tree: In this type of threaded binary tree, each node 
+has a thread that points to its pre-order predecessor and/or successor. This 
+allows for efficient pre-order traversal without the need for recursive calls or 
+a stack. The pre-order predecessor of a node is the node that comes immediately 
+before it in the pre-order traversal, and the pre-order successor is the node 
+that comes immediately after it in the pre-order traversal.
+
+Compared to regular binary trees, threaded binary trees have some differences:
+
+Space optimization: Threaded binary trees use threads instead of null pointers,
+which reduces the amount of memory needed to represent the tree, as null pointers 
+are not required.
+
+Traversal efficiency: Threaded binary trees allow for efficient traversal without 
+the need for recursive calls or a stack, making them more efficient in terms of 
+time complexity for certain types of traversal, such as in-order or pre-order 
+traversal.
+
+Insertion and deletion complexity: Threaded binary trees may have slightly higher 
+complexity for insertion and deletion operations compared to regular binary trees, 
+as the threads need to be properly maintained to ensure correct traversal.
+
+In summary, threaded binary trees are binary trees with additional threads that 
+allow for efficient traversal without the need for recursive calls or a stack. 
+They come in different types, such as in-order and pre-order threaded binary trees,
+and offer space optimization and traversal efficiency benefits compared to regular 
+binary trees. However, they may have slightly higher complexity for insertion and 
+deletion operations.

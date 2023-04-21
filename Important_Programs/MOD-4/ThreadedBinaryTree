@@ -1,0 +1,4 @@
+Threaded binary trees have the advantage of allowing for faster traversal of the tree.
+In a regular binary tree, traversal requires visiting each node in a specific order, which can be time-consuming. However, in a threaded binary tree, the threads provide a shortcut that allows for faster traversal.
+
+In a threaded binary tree, each node has a thread that points to either its predecessor or successor in the traversal order. This means that when traversing the tree, instead of having to visit each node in order, you can follow the threads to quickly move to the next node in the traversal order. This can significantly reduce the time required for traversal, making threaded binary trees a more efficient data structure for certain applications.
